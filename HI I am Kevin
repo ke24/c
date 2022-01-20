@@ -1,0 +1,107 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Copy of Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPQRoQtjPQb6sbPlt+b1ve8",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ke24/c/blob/main/HI%20I%20am%20Kevin\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1) Number Guess Game."
+      ],
+      "metadata": {
+        "id": "EeUXiy-dHeme"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HVNkUhyUHFzr",
+        "outputId": "ecf48d73-179a-472e-c816-f852d1cc9fdf"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "welcome to Number Guessing Game\n"
+          ]
+        }
+      ],
+      "source": [
+        "import random\n",
+        "print(\"welcome to Number Guessing Game\")\n",
+        "Number=random.randint(1,10)\n",
+        "chance=0\n",
+        "\n",
+        "while chance<3:\n",
+        "    guess=int(input(\"Enter your GUess between 1-10\"))\n",
+        "    if(guess==Number):\n",
+        "        print(\"Congratulations you won!!\")\n",
+        "    elif(guess<Number):\n",
+        "        print(\"Your Guess is too low. Try higher Number\")\n",
+        "    else:\n",
+        "        print(\"Your Guess is too high. Try low Number\")\n",
+        "    chance+=1\n",
+        "\n",
+        "if not chance <3:\n",
+        "    print(\"You lose! The Number is:\",Number)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2) I can read your mind game."
+      ],
+      "metadata": {
+        "id": "5mCYBiegHO-u"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"welcome to I'll read your mind\")\n",
+        "print(\"Keep in mind not to type the answer when asked questions.\")\n",
+        "n = input(\"Please enter your name\")\n",
+        "st1 = (input(\"Choose a even number from even 2-8\"))\n",
+        "st5 = (input(\"Now double your number\"))\n",
+        "st2 = (input(\"Now add 12 to your number\"))\n",
+        "st3 = (input(\"Divide the answer by 2\"))\n",
+        "st4 = (input(\"Subtract your answer with you the number which you choose!\"))\n",
+        "print(\"Your answer is 6!!!\")\n"
+      ],
+      "metadata": {
+        "id": "ezFDtkjvHJKO"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
